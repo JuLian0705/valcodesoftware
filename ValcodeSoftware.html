@@ -64,7 +64,7 @@
     </ul>
 <center>
    <div class="carousel-container">
-        <button class="carousel-btn left" onclick="moverDeslizar(-1)">&#8592;</button>
+       <!-- <button class="carousel-btn left" onclick="moverDeslizar(-1)">&#8592;</button>-->
 
         <div class="carousel-slides">
         <div class="slide">
@@ -72,7 +72,6 @@
       <div class="carousel-caption">
         <h2>Nuestras Soluciones en Colombia </h2>
         <p>Facilitamos procesos más ágiles y transparentes con soluciones tecnológicas innovadoras.</p>
-        <a href="#link1" class="caption-btn">CONOCE MÁS</a>
       </div>
     </div>
     <div class="slide">
@@ -80,7 +79,6 @@
       <div class="carousel-caption">
         <h2>Soluciones digitales estratégicas para tu organización</h2>
         <p>Desarrollamos tecnología alineada con los objetivos de tu empresa</p>
-        <a href="#link2" class="caption-btn">DESCUBRE CÓMO</a>
       </div>
     </div>
     <div class="slide">
@@ -88,7 +86,6 @@
       <div class="carousel-caption">
         <h2>Innovamos contigo</h2>
         <p>Impulsamos tu negocio con soluciones tecnológicas modernas, eficientes y a la medida.</p>
-        <a href="#link3" class="caption-btn">VER SOLUCIONES</a>
       </div>
     </div>
     <div class="slide">
@@ -96,7 +93,6 @@
       <div class="carousel-caption">
       <h2>Automatizamos procesos para hacer crecer tu negocio</h2>
       <p>Desarrollamos soluciones de software que optimizan tu productividad y reducen costos</p>
-        <a href="#link4" class="caption-btn">VER SOLUCIONES</a>
       </div>
     </div>
     <div class="slide">
@@ -104,8 +100,6 @@
       <div class="carousel-caption">
         <h2>Revoluciona tu negocio con inteligencia artificial</h2>
         <p>Integramos IA para automatizar, optimizar y escalar tus procesos con soluciones inteligentes</p>
-
-        <a href="#link5" class="caption-btn">VER SOLUCIONES</a>
       </div>
     </div>
     <div class="slide">
@@ -113,15 +107,15 @@
       <div class="carousel-caption">
         <h2>Más productividad, menos esfuerzo</h2>
         <p>Optimizamos tus procesos para que tu equipo logre más en menos tiempo</p>
-        <a href="#link6" class="caption-btn">VER SOLUCIONES</a>
       </div>
     </div>
   </div>    
-  <button class="carousel-btn right" onclick="moverDeslizar(1)">&#8594;</button>
+  <!--<button class="carousel-btn right" onclick="moverDeslizar(1)">&#8594;</button>-->
     </div>
 
     <div class="container">
-        <h3>Descubre el poder de nuestras herramientas</h3>
+        <h3>Descubre el poder de <br>
+          nuestras herramientas</h3>
     </div>
 
     <div class="container-description">
@@ -135,7 +129,7 @@
             </div>
       </div>
        <div class="description">
-            <h2>Hub Tecnologico</h2>
+            <h2>Acerca De</h2>
             <p>
                 Tecnolúcido es una plataforma innovadora creada por Julian, creador de contenido, donde ofrezco mis servicios como freelancer, desarrollando software y sitios web. Nuestro propósito es seguir expandiéndonos en redes sociales y atraer clientes interesados en soluciones digitales de alto nivel.
             </p>
@@ -144,62 +138,13 @@
                 avanzadas, brindando soluciones personalizadas para cada necesidad.
             </p>
         </div>
-        <script>
-           document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        } else {
-          entry.target.classList.remove("animate");
-        }
-      });
-    }, { threshold: 0.3 }); // ajusta el umbral según prefieras
 
-    const targets = document.querySelectorAll(".description");
-    targets.forEach(target => observer.observe(target));
-  });
-        </script>
-        <script>
-                    document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        } else {
-          entry.target.classList.remove("animate");
-        }
-      });
-    }, { threshold: 0.3 }); // ajusta el umbral según prefieras
-
-    const targets = document.querySelectorAll(".container-description");
-    targets.forEach(target => observer.observe(target));
-  });
-        </script>
-        
-        <script>
-    document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-        } else {
-          entry.target.classList.remove("animate");
-        }
-      });
-    }, { threshold: 0.3 }); 
-
-    const targets = document.querySelectorAll(".container");
-    targets.forEach(target => observer.observe(target));
-  });
-        </script>
-
-<div class="card-container-informacion">
-    <div class="card-informacion">Carta 1</div>
-    <div class="card-informacion">Carta 2</div>
-    <div class="card-informacion">Carta 3</div>
-    <div class="card-informacion">Carta 4</div>
-</div>
+        <div class="card-container-informacion">
+            <div class="card-informacion">Carta 1</div>
+            <div class="card-informacion">Carta 2</div>
+            <div class="card-informacion">Carta 3</div>
+            <div class="card-informacion">Carta 4</div>
+        </div>
   
       
 <div class="scroll-container">
@@ -361,6 +306,8 @@
 <script src="assets/js/Animacion-menu.js"></script>
 <script src="assets/js/Animacion-submenu.js"></script>
 <script src="assets/js/chat.js"></script>
-
+<script src="assets/js/Animacion-descripcion.js"></script>
+<script src="assets/js/Animacion-contenedor-descripcion.js"></script>
+<script src="assets/js/animacion-container.js"></script>
 </body>
 </html>
