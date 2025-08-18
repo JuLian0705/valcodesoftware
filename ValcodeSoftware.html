@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valcode software</title>
     <link rel="stylesheet" href="assets/Valcode-home.css">
+    <link rel="icon" type="image/png" href="assets/img/logo-header.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
@@ -140,10 +141,18 @@
         </div>
 
         <div class="card-container-informacion">
-            <div class="card-informacion">Carta 1</div>
-            <div class="card-informacion">Carta 2</div>
-            <div class="card-informacion">Carta 3</div>
-            <div class="card-informacion">Carta 4</div>
+          <div class="card-informacion" data-info="Información de la carta 1">Carta 1</div>
+          <div class="card-informacion" data-info="Información de la carta 2">Carta 2</div>
+          <div class="card-informacion" data-info="Información de la carta 3">Carta 3</div>
+          <div class="card-informacion" data-info="Información de la carta 4">Carta 4</div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+          </div>
         </div>
   
       
@@ -222,7 +231,7 @@
 
 <div class="contenedor-2">
   <!-- Columna izquierda -->
-<div class="col-izquierda">
+<div class="col-izquierda ">
   <h2>¿Por qué deberías contactarnos?</h2>
   <p>
     En <strong>Valcode</strong> creemos en la <strong>transparencia</strong> y en una
@@ -236,19 +245,20 @@
 
   <div class="contacto">
     <div class="item-contacto">
-      <i class="ri-mail-unread-fill"></i>
+      <img src="assets/img/email.png" alt="Email">
       <span>softwarevalcode@gmail.com</span>
     </div>
     <div class="item-contacto">
-      <i class="ri-whatsapp-fill"></i>
+      <img src="assets/img/whatsapp-fill.png" alt="Teléfono">
       <span>+57 311 467 2067</span>
     </div>
     <div class="item-contacto">
-      <i class="ri-whatsapp-fill"></i>
+      <img src="assets/img/whatsapp-fill.png" alt="Teléfono">
       <span>+57 321 950 3675</span>
     </div>
   </div>
 </div>
+
 
   <!-- Columna derecha -->
   <div class="col-derecha" id="feed">
@@ -299,6 +309,8 @@
   </div>
 </footer>
 
+
+<script src="assets/js/modal.js"></script>
 <script src="assets/js/scrollmodulo3.js"></script>
 <script src="assets/js/menunavbar.js"></script>
 <script src="assets/js/submenu.js"></script>
@@ -309,5 +321,6 @@
 <script src="assets/js/Animacion-descripcion.js"></script>
 <script src="assets/js/Animacion-contenedor-descripcion.js"></script>
 <script src="assets/js/animacion-container.js"></script>
+
 </body>
 </html>
