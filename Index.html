@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valcode software</title>
     <link rel="stylesheet" href="assets/Valcode-home.css">
+    <link rel="icon" type="image/png" href="assets/img/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 </head>
 <body>
+  <body class="hidden">
+        <div class="loader-overlay" id="loader">
+         <div class="loaderBar"></div>
+        </div>
       <div class="mobile-sidebar">
       <img src="assets/img/valcode_logo_all_white.png" alt="Logo Valcode" class="mobile-logo">
       </div>
       <div class="navbar">
-      <img src="assets/img/valcode_logo_all_white.png" alt="Logo Valcode" class="logo" id="mainLogo">
+      <img src="assets/img/77C07D01-793E-4B81-A4EB-FD4199FDB35E-removebg-preview.png" alt="Logo Valcode" class="logo" id="mainLogo">
         <ul class="nav-links">
           <li><a href="#">Inicio</a></li>
            <li><a href="#">Servicios</a></li>
@@ -140,10 +145,36 @@
         </div>
 
         <div class="card-container-informacion">
-            <div class="card-informacion">Carta 1</div>
-            <div class="card-informacion">Carta 2</div>
-            <div class="card-informacion">Carta 3</div>
-            <div class="card-informacion">Carta 4</div>
+          <div class="card-informacion" data-info="Información de la carta 1">
+           <i class="ri-macbook-line"><br>
+            <h5 style="font-size: 20px; color: #FFFFFF;">DISEÑO WEB</h5>
+            <h6 style="font-size: 20px; color: #FFFFFF;">Tu sitio web es tu carta de presentación digital. Diseñamos páginas modernas, intuitivas y coherentes con tu identidad para atraer, conectar y convertir a tu audiencia en clientes.</h6>
+           </i>
+          </div>
+          <div class="card-informacion" data-info="Información de la carta 2">
+            pruebas de usuario
+            <p>
+              Tu sitio web es tu carta de presentación digital. Diseñamos páginas modernas, intuitivas y coherentes con tu identidad para atraer, conectar y convertir a tu audiencia en clientes.
+            </p>
+          </div>
+          <div class="card-informacion" data-info="Información de la carta 3">
+            pruebas de usuario
+          </div>
+           <div class="card-informacion" data-info="Información de la carta 5">
+            pruebas de usuario
+          </div>
+          <div class="card-informacion" data-info="Información de la carta 6">
+            pruebas de usuario
+          </div>
+          <div class="card-informacion" data-info="Información de la carta 7">Carta 3</div>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-text"></p>
+          </div>
         </div>
   
       
@@ -222,7 +253,7 @@
 
 <div class="contenedor-2">
   <!-- Columna izquierda -->
-<div class="col-izquierda">
+<div class="col-izquierda ">
   <h2>¿Por qué deberías contactarnos?</h2>
   <p>
     En <strong>Valcode</strong> creemos en la <strong>transparencia</strong> y en una
@@ -236,19 +267,20 @@
 
   <div class="contacto">
     <div class="item-contacto">
-      <i class="ri-mail-unread-fill"></i>
+      <img src="assets/img/email.png" alt="Email">
       <span>softwarevalcode@gmail.com</span>
     </div>
     <div class="item-contacto">
-      <i class="ri-whatsapp-fill"></i>
+      <img src="assets/img/whatsapp-fill.png" alt="Teléfono">
       <span>+57 311 467 2067</span>
     </div>
     <div class="item-contacto">
-      <i class="ri-whatsapp-fill"></i>
+      <img src="assets/img/whatsapp-fill.png" alt="Teléfono">
       <span>+57 321 950 3675</span>
     </div>
   </div>
 </div>
+
 
   <!-- Columna derecha -->
   <div class="col-derecha" id="feed">
@@ -299,6 +331,8 @@
   </div>
 </footer>
 
+
+<script src="assets/js/modal.js"></script>
 <script src="assets/js/scrollmodulo3.js"></script>
 <script src="assets/js/menunavbar.js"></script>
 <script src="assets/js/submenu.js"></script>
@@ -309,5 +343,7 @@
 <script src="assets/js/Animacion-descripcion.js"></script>
 <script src="assets/js/Animacion-contenedor-descripcion.js"></script>
 <script src="assets/js/animacion-container.js"></script>
+<script src="assets/js/carga.js"></script>
+
 </body>
 </html>
