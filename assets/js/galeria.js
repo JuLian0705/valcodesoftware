@@ -1,11 +1,1 @@
-  let currentSlide = 0;
-  const slides = document.querySelector(".carousel-slides");
-  const totalSlides = document.querySelectorAll(".slide").length;
-
-  function moverDeslizar(direccion) {
-    currentSlide = (currentSlide + direccion + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${currentSlide * 100}vw)`;
-  }
-  setInterval(() => {
-    moverDeslizar(1);
-  }, 5000);
+const _0x4f6dbf=_0xc042;(function(_0x49ada6,_0x6e04b2){const _0x19cd76=_0xc042,_0x2861f9=_0x49ada6();while(!![]){try{const _0x48acb7=parseInt(_0x19cd76(0xa7))/0x1+-parseInt(_0x19cd76(0xa2))/0x2*(-parseInt(_0x19cd76(0x98))/0x3)+-parseInt(_0x19cd76(0xa1))/0x4+-parseInt(_0x19cd76(0x9c))/0x5*(parseInt(_0x19cd76(0x99))/0x6)+-parseInt(_0x19cd76(0xa5))/0x7+-parseInt(_0x19cd76(0xa4))/0x8*(parseInt(_0x19cd76(0xa0))/0x9)+parseInt(_0x19cd76(0x9a))/0xa;if(_0x48acb7===_0x6e04b2)break;else _0x2861f9['push'](_0x2861f9['shift']());}catch(_0x32d465){_0x2861f9['push'](_0x2861f9['shift']());}}}(_0x4965,0x499ff));let currentSlide=0x0;function _0x4965(){const _0x5a9f82=['12Vedxxd','5749130UMuCsi','vw)','1285115eKbZAb','.slide','querySelector','style','30024QyRqcC','1323064SFqPqQ','783114nkvtJL','length','424raUQBx','1446396fxqvRD','.carousel-slides','563345zZLftI','transform','3NPudyF'];_0x4965=function(){return _0x5a9f82;};return _0x4965();}const slides=document[_0x4f6dbf(0x9e)](_0x4f6dbf(0xa6)),totalSlides=document['querySelectorAll'](_0x4f6dbf(0x9d))[_0x4f6dbf(0xa3)];function moverDeslizar(_0x4bd6e9){const _0x356616=_0x4f6dbf;currentSlide=(currentSlide+_0x4bd6e9+totalSlides)%totalSlides,slides[_0x356616(0x9f)][_0x356616(0xa8)]='translateX(-'+currentSlide*0x64+_0x356616(0x9b);}function _0xc042(_0x4018bd,_0x4487d1){const _0x496533=_0x4965();return _0xc042=function(_0xc042ae,_0x3b9045){_0xc042ae=_0xc042ae-0x98;let _0xf708bb=_0x496533[_0xc042ae];return _0xf708bb;},_0xc042(_0x4018bd,_0x4487d1);}setInterval(()=>{moverDeslizar(0x1);},0x1388);

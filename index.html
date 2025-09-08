@@ -208,36 +208,6 @@
   </div>
 </div>
 </div>
-<script>
-   const form = document.getElementById('formulario-contacto');
-  const mensaje = document.getElementById('mensaje-enviado');
-
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
-
-    const data = new FormData(form);
-    const res = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
-    });
-
-    if (res.ok) {
-      form.style.display = 'none';
-      mensaje.style.display = 'block';
-    } else {
-      alert('Ocurrió un error. Intenta nuevamente.');
-    }
-  });
-
-    function mostrarFormulario() {
-    const form = document.getElementById('formulario-contacto');
-    form.style.display = 'flex';
-  }
-</script>
- 
-
-
 <div class="contenedor-2">
   <!-- Columna izquierda -->
 <div class="col-izquierda ">
@@ -270,19 +240,8 @@
 
 
   <!-- Columna derecha -->
-  <div class="col-derecha" id="feed">
-    <!-- Primer módulo con formulario -->
-    <div class="modulo" id="modulo1">
-      <div id="contacto" class="contact-container">
-        <h2>Envíanos un Mensaje</h2>
-        <form class="formulario" id="formulario-contacto" action="https://formspree.io/f/xanbdnek" method="POST">
-          <input type="text" name="nombre" placeholder="Tu nombre" required>
-          <input type="email" name="correo" placeholder="Tu correo" required>
-          <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-    </div>
+<script language=javascript>document.write(unescape('%20%20%3Cdiv%20class%3D%22col-derecha%22%20id%3D%22feed%22%3E%0A%20%20%20%20%3C%21--%20Primer%20m%F3dulo%20con%20formulario%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22modulo%22%20id%3D%22modulo1%22%3E%0A%20%20%20%20%20%20%3Cdiv%20id%3D%22contacto%22%20class%3D%22contact-container%22%3E%0A%20%20%20%20%20%20%20%20%3Ch2%3EEnv%EDanos%20un%20Mensaje%3C/h2%3E%0A%20%20%20%20%20%20%20%20%3Cform%20class%3D%22formulario%22%20id%3D%22formulario-contacto%22%20action%3D%22https%3A//formspree.io/f/xanbdnek%22%20method%3D%22POST%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22text%22%20name%3D%22nombre%22%20placeholder%3D%22Tu%20nombre%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cinput%20type%3D%22email%22%20name%3D%22correo%22%20placeholder%3D%22Tu%20correo%22%20required%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctextarea%20name%3D%22mensaje%22%20placeholder%3D%22Tu%20mensaje%22%20required%3E%3C/textarea%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cbutton%20type%3D%22submit%22%3EEnviar%3C/button%3E%0A%20%20%20%20%20%20%20%20%3C/form%3E%0A%20%20%20%20%20%20%3C/div%3E%0A%20%20%20%20%3C/div%3E'))</script>
+
 
     <!-- Segundo módulo -->
     <div class="modulo" id="modulo2">

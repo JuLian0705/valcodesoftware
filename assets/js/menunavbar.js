@@ -1,14 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.querySelector('.navbar');
-    const logo = document.getElementById('mainLogo');
-
-    window.addEventListener('scroll', function () {
-      if (window.scrollY > 20) {
-        navbar.classList.add('scrolled');
-        logo.src = 'assets/img/valcode_logo_all_white.png'; // logo blanco al hacer scroll
-      } else {
-        navbar.classList.remove('scrolled');
-        logo.src = 'assets/img/77C07D01-793E-4B81-A4EB-FD4199FDB35E-removebg-preview.png'; // logo original
-      }
-    });
-  });
+const _0x49c724=_0x3040;function _0x3040(_0x14f8b2,_0x3b9d1c){const _0x3cc1ad=_0x3cc1();return _0x3040=function(_0x304031,_0x2464c2){_0x304031=_0x304031-0x159;let _0xd3a2e=_0x3cc1ad[_0x304031];return _0xd3a2e;},_0x3040(_0x14f8b2,_0x3b9d1c);}function _0x3cc1(){const _0x37f290=['572TZzftT','388910gnhNjf','2ijZWYe','scrollY','scrolled','scroll','add','querySelector','2055473cRUHiV','4663116sHHmji','addEventListener','4399405BwwfLD','src','remove','assets/img/valcode_logo_all_white.png','4BygvAC','1162427TwcfrX','108tHIKet','9212058riqCHJ','mainLogo','classList','405112YHLUlf'];_0x3cc1=function(){return _0x37f290;};return _0x3cc1();}(function(_0x34af19,_0x43cd01){const _0x3d6555=_0x3040,_0x3967a0=_0x34af19();while(!![]){try{const _0x485572=parseInt(_0x3d6555(0x159))/0x1+parseInt(_0x3d6555(0x161))/0x2*(-parseInt(_0x3d6555(0x168))/0x3)+parseInt(_0x3d6555(0x16e))/0x4*(parseInt(_0x3d6555(0x16a))/0x5)+parseInt(_0x3d6555(0x15b))/0x6+parseInt(_0x3d6555(0x167))/0x7+parseInt(_0x3d6555(0x15e))/0x8*(parseInt(_0x3d6555(0x15a))/0x9)+-parseInt(_0x3d6555(0x160))/0xa*(parseInt(_0x3d6555(0x15f))/0xb);if(_0x485572===_0x43cd01)break;else _0x3967a0['push'](_0x3967a0['shift']());}catch(_0x34f553){_0x3967a0['push'](_0x3967a0['shift']());}}}(_0x3cc1,0xdc46e),document[_0x49c724(0x169)]('DOMContentLoaded',function(){const _0x44d983=_0x49c724,_0x1041a5=document[_0x44d983(0x166)]('.navbar'),_0x1edacb=document['getElementById'](_0x44d983(0x15c));window['addEventListener'](_0x44d983(0x164),function(){const _0x2ba965=_0x44d983;window[_0x2ba965(0x162)]>0x14?(_0x1041a5[_0x2ba965(0x15d)][_0x2ba965(0x165)]('scrolled'),_0x1edacb['src']=_0x2ba965(0x16d)):(_0x1041a5[_0x2ba965(0x15d)][_0x2ba965(0x16c)](_0x2ba965(0x163)),_0x1edacb[_0x2ba965(0x16b)]='assets/img/77C07D01-793E-4B81-A4EB-FD4199FDB35E-removebg-preview.png');});}));

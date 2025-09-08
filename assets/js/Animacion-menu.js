@@ -1,13 +1,1 @@
-//animacion del menu movil
-  const checkbox = document.getElementById("checkbox");
-  const panel = document.querySelector(".mobile-menu-panel");
-
-  checkbox.addEventListener("change", function () {
-    if (checkbox.checked) {
-      panel.classList.remove("animate__fadeOutRight");
-      panel.classList.add("animate__fadeInRight");
-    } else {
-      panel.classList.remove("animate__fadeInRight");
-      panel.classList.add("animate__fadeOutRight");
-    }
-  });
+function _0x5c7c(_0x1e9aa2,_0x3d2bb9){const _0x46e4cd=_0x46e4();return _0x5c7c=function(_0x5c7c60,_0x9a1e2a){_0x5c7c60=_0x5c7c60-0x10c;let _0x11f014=_0x46e4cd[_0x5c7c60];return _0x11f014;},_0x5c7c(_0x1e9aa2,_0x3d2bb9);}function _0x46e4(){const _0x1c547d=['38117cSJIHY','4dEkVra','33UbxhAZ','getElementById','remove','change','4626IFEKRk','add','6pYGshz','animate__fadeOutRight','checkbox','checked','216870zyQBfo','9297GxTQWm','querySelector','366150NzJLbm','1000wTDpRN','classList','616658wVbjxP','addEventListener','animate__fadeInRight','813204NZCjie','.mobile-menu-panel'];_0x46e4=function(){return _0x1c547d;};return _0x46e4();}const _0x267e6d=_0x5c7c;(function(_0x3e41c8,_0x46156d){const _0x285ff6=_0x5c7c,_0x5568ea=_0x3e41c8();while(!![]){try{const _0x2dc7f0=parseInt(_0x285ff6(0x119))/0x1+parseInt(_0x285ff6(0x11f))/0x2*(parseInt(_0x285ff6(0x121))/0x3)+parseInt(_0x285ff6(0x11a))/0x4*(parseInt(_0x285ff6(0x111))/0x5)+-parseInt(_0x285ff6(0x117))/0x6+parseInt(_0x285ff6(0x114))/0x7+-parseInt(_0x285ff6(0x112))/0x8*(-parseInt(_0x285ff6(0x10f))/0x9)+-parseInt(_0x285ff6(0x10e))/0xa*(parseInt(_0x285ff6(0x11b))/0xb);if(_0x2dc7f0===_0x46156d)break;else _0x5568ea['push'](_0x5568ea['shift']());}catch(_0x3dcb6b){_0x5568ea['push'](_0x5568ea['shift']());}}}(_0x46e4,0x205f5));const checkbox=document[_0x267e6d(0x11c)](_0x267e6d(0x10c)),panel=document[_0x267e6d(0x110)](_0x267e6d(0x118));checkbox[_0x267e6d(0x115)](_0x267e6d(0x11e),function(){const _0x3c6936=_0x267e6d;checkbox[_0x3c6936(0x10d)]?(panel[_0x3c6936(0x113)][_0x3c6936(0x11d)]('animate__fadeOutRight'),panel[_0x3c6936(0x113)][_0x3c6936(0x120)](_0x3c6936(0x116))):(panel[_0x3c6936(0x113)][_0x3c6936(0x11d)](_0x3c6936(0x116)),panel[_0x3c6936(0x113)][_0x3c6936(0x120)](_0x3c6936(0x122)));});
