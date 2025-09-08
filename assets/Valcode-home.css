@@ -1535,7 +1535,6 @@ html {
     }
   }
 
-
 .whatsapp-btn {
   position: fixed !important;
   bottom: 20px;
@@ -1549,15 +1548,17 @@ html {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  z-index: 2147483647 !important; /* Máximo soportado por navegadores */
-  transform: translateY(100px); 
-  opacity: 0; 
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 2147483647 !important;
+  
+  /* Estado inicial oculto */
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .whatsapp-btn.show {
-  transform: translateY(0); 
-  opacity: 1; 
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .whatsapp-btn:hover {
@@ -1569,7 +1570,6 @@ html {
   width: 40px;
   height: 40px;
 }
-
 
   /* FOOTER  */
 
