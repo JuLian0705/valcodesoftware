@@ -265,7 +265,7 @@ background-color: #5A76FF;
 }
 
 .mobile-menu-panel > ul > li > a:active {
-  background-color: #006600;
+  background-color: #5A76FF;
 }
 
 #checkbox:checked ~ .mobile-menu-panel {
@@ -323,7 +323,7 @@ background-color: #5A76FF;
 }
 
 .submenu::-webkit-scrollbar-thumb {
-  background-color: #00cc00;
+  background-color: #FFFFFF;
   border-radius: 10px;
 }
 .has-submenu.active .submenu {
@@ -338,7 +338,7 @@ background-color: #5A76FF;
   background-color: #5A76FF;
   text-decoration: none;
   transition: background-color 0.3s ease, padding-left 0.3s ease;
-   border: 2px solid #00cc00;       
+   border: 2px solid #FFFFFF;       
     box-sizing: border-box;  /* Borde verde visible */
   border-radius: 8px;   
 }
@@ -431,7 +431,8 @@ background-color: #5A76FF;
 .social-icons-container li i {
   color: #808080;
   font-size: 30px;
-  background-color: #00ff00; /* Fondo oscuro, puedes cambiarlo */
+  background-color: #FFFFFF;
+  border: 1px solid #808080; 
   padding: 12px;
   border-radius: 50%; /* Círculo perfecto */
   transition: transform 0.3s ease, background-color 0.3s ease;
