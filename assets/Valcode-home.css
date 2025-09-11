@@ -11,7 +11,7 @@ body.hidden {
     }
 /*boton de carga*/
 .loader-overlay {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -20,7 +20,8 @@ body.hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; 
+  z-index: 2147483647 !important; 
+  pointer-events: all;
 }
 
 .loaderBar {
